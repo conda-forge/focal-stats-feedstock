@@ -1,5 +1,5 @@
 {% set name = "focal-stats" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/focal_stats-{{ version }}.tar.gz
-  sha256: ed0024a8346fa7dd40e6cd702981d485714d8a74491abf3bd2b04c9bc3db2523
+  sha256: 6ab6e0276c402d732eb47c06709cd1ae17c87111666f1401934172d1f7149dce
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -39,7 +39,7 @@ about:
   home: https://pypi.org/project/focal-stats/
   license: MIT
   license_file: LICENSE
-  summary: 'Focal statistics for Python'
+  summary: Focal statistics for Python
   doc_url: https://focal-stats.readthedocs.io/en/latest/?badge=latest
   dev_url: https://github.com/jasperroebroek/focal-stats
 
