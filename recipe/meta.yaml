@@ -1,5 +1,5 @@
 {% set name = "focal-stats" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/focal_stats-{{ version }}.tar.gz
-  sha256: 6ab6e0276c402d732eb47c06709cd1ae17c87111666f1401934172d1f7149dce
+  sha256: 8a954104fe39a81aa8709de91515ad6a7872b5cb8615efa4381318722801f558
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
