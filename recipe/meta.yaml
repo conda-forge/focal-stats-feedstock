@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/focal_stats-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/focal_stats-{{ version }}.tar.gz
   sha256: 5a93e2b834ee05f3e1c24df5be6ee55cbad83fc4229a3b1804c8e65383fab6ad
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 3
 
 requirements:
   build:
